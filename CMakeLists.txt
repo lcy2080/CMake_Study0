@@ -1,0 +1,8 @@
+#Require version
+CMAKE_MINIMUM_REQUIRED(VERSION 3.0)
+
+#Project Setup
+PROJECT(Tuto0 CXX)
+
+#EXECUTABLE TARGET
+ADD_EXECUTABLE(Tuto0.out main.cpp)
