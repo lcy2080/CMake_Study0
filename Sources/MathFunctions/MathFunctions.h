@@ -2,10 +2,16 @@
 #ifndef MATHFUNCTIONS_H
 #define MATHFUNCTIONS_H
 
-extern float mysqrt(float input)
+#include <cmath>
+
+float mysqrt(float input)
 {
-    float value = input;
-    return value * value;
+    double value = input;
+    if (value <= 0)
+    {
+        return 0;
+    }
+    return sqrt(value);
 }
 
 #endif //MATHFUNCTIONS_H

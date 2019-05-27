@@ -1,4 +1,7 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include <iostream>
+
 #include "Tuto0Config.h"
 
 #ifdef USE_MYMATH
@@ -8,14 +11,27 @@
 #endif
 
 
-int main()
+int main(int argc, char* argv[])
 {
-    std::cout << "hello world " << TUTO0_VERSION_MAJOR << "." << TUTO0_VERSION_MINOR << std::endl;
+    if (argc < 2)
+    {
+        fprintf(stdout, "%s Version %d.%d\n", argv[0]
+                , TUTO0_VERSION_MAJOR
+                , TUTO0_VERSION_MINOR);
+        fprintf(stdout, "Usage: %s number\n", argv[0]);
+        return 1;
+    }
 
+    float InputValue = atof(argv[1]);
 #ifdef USE_MYMATH
-    std::cout << "SQRT Out : " << mysqrt(3) << std::endl;
+    float OutputValue = mysqrt(InputValue);
+    //std::cout << "SQRT Out : " << mysqrt(InputValue) << std::endl;
 #else
-    std::cout << "SQRT Out : " << sqrt(3) << std::endl;
+    float OutputValue = sqrt(InputValue);
+    //std::cout << "SQRT Out : " << sqrt(InputValue) << std::endl;
 #endif
+
+    fprintf(stdout, "%g is %g", InputValue, OutputValue);
+
     return 0;
 }
