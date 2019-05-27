@@ -17,5 +17,20 @@ CONFIGURE_FILE(
 #so that we will find Tuto0Config.h
 INCLUDE_DIRECTORIES("${PROJECT_BINARY_DIR}")
 
+option (USE_MYMATH "Use tutorial provided math implementation" OFF)
+
+if (USE_MYMATH)
+    INCLUDE_DIRECTORIES("${PROJECT_SOURCE_DIR}/MathFunctions")
+    add_subdirectory(MathFunctions)
+    set(EXTRA_LIBS ${EXTRA_LIBS} MathFunctions)
+endif (USE_MYMATH)
+
 #EXECUTABLE TARGET
 ADD_EXECUTABLE(Tuto0.out main.cpp)
+target_link_libraries(${EXTRA_LIBS})
+
+#add the install targets
+install(TARGETS Tuto0.out
+        DESTINATION bin)
+install(FILES ${PROJECT_BINARY_DIR}/Tuto0Config.h
+        DESTINATION include)
