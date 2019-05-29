@@ -7,6 +7,8 @@ PROJECT(Tuto0 CXX)
 SET(TUTO0_VERSION_MAJOR 0)
 SET(TUTO0_VERSION_MINOR 1)
 
+set(EXTRA_LIBS)
+
 #configure a header file to pass some of the Cmake Settings to the Source code.
 CONFIGURE_FILE(
     "${PROJECT_BINARY_DIR}/Tuto0Config.h.in"
@@ -17,7 +19,7 @@ CONFIGURE_FILE(
 #so that we will find Tuto0Config.h
 INCLUDE_DIRECTORIES("${PROJECT_BINARY_DIR}")
 
-option (USE_MYMATH "Use tutorial provided math implementation" OFF)
+option (USE_MYMATH "Use tutorial provided math implementation" ON)
 
 if (USE_MYMATH)
     INCLUDE_DIRECTORIES("${PROJECT_SOURCE_DIR}/MathFunctions")
