@@ -25,6 +25,11 @@ if (USE_MYMATH)
     set(EXTRA_LIBS ${EXTRA_LIBS} MathFunctions)
 endif (USE_MYMATH)
 
+#does this system provide the log and exp functions?
+INCLUDE(CheckFunctionExists)
+CHECK_FUNCTION_EXISTS(log HAVE_LOG)
+check_function_exists(exp HAVE_EXP)
+
 #EXECUTABLE TARGET
 ADD_EXECUTABLE(Tuto0.out main.cpp)
 target_link_libraries(${EXTRA_LIBS})
@@ -51,4 +56,5 @@ set_tests_properties(TutorialSmall PROPERTIES PASS_REGULAR_EXPRESSION "0.0001 is
 #does the usage message work?
 add_test(TutorialUsage Tuto0.out)
 set_tests_properties(TutorialUsage PROPERTIES PASS_REGULAR_EXPRESSION "Usage: .* number")
+
 

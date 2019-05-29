@@ -59,6 +59,26 @@
 					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/LeeChangYoung/Documents/Workspace/CMake_Tutorial/Sources/MathFunctions/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="install/local">
+				<Option working_dir="C:/Users/LeeChangYoung/Documents/Workspace/CMake_Tutorial/Sources/MathFunctions"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/LeeChangYoung/Documents/Workspace/CMake_Tutorial/Sources/MathFunctions/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/LeeChangYoung/Documents/Workspace/CMake_Tutorial/Sources/MathFunctions/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/LeeChangYoung/Documents/Workspace/CMake_Tutorial/Sources/MathFunctions/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/LeeChangYoung/Documents/Workspace/CMake_Tutorial/Sources/MathFunctions/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="C:/Users/LeeChangYoung/Documents/Workspace/CMake_Tutorial/Sources/MathFunctions"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/LeeChangYoung/Documents/Workspace/CMake_Tutorial/Sources/MathFunctions/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/LeeChangYoung/Documents/Workspace/CMake_Tutorial/Sources/MathFunctions/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/LeeChangYoung/Documents/Workspace/CMake_Tutorial/Sources/MathFunctions/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/LeeChangYoung/Documents/Workspace/CMake_Tutorial/Sources/MathFunctions/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="C:/Users/LeeChangYoung/Documents/Workspace/CMake_Tutorial/Sources/MathFunctions"/>
 				<Option type="4"/>
@@ -74,6 +94,26 @@
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/LeeChangYoung/Documents/Workspace/CMake_Tutorial/Sources/MathFunctions/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/LeeChangYoung/Documents/Workspace/CMake_Tutorial/Sources/MathFunctions/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/LeeChangYoung/Documents/Workspace/CMake_Tutorial/Sources/MathFunctions/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/LeeChangYoung/Documents/Workspace/CMake_Tutorial/Sources/MathFunctions/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="C:/Users/LeeChangYoung/Documents/Workspace/CMake_Tutorial/Sources/MathFunctions"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/LeeChangYoung/Documents/Workspace/CMake_Tutorial/Sources/MathFunctions/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/LeeChangYoung/Documents/Workspace/CMake_Tutorial/Sources/MathFunctions/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/LeeChangYoung/Documents/Workspace/CMake_Tutorial/Sources/MathFunctions/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/LeeChangYoung/Documents/Workspace/CMake_Tutorial/Sources/MathFunctions/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="C:/Users/LeeChangYoung/Documents/Workspace/CMake_Tutorial/Sources/MathFunctions"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/LeeChangYoung/Documents/Workspace/CMake_Tutorial/Sources/MathFunctions/Makefile&quot;  VERBOSE=1 install/strip"/>
 					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/LeeChangYoung/Documents/Workspace/CMake_Tutorial/Sources/MathFunctions/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/LeeChangYoung/Documents/Workspace/CMake_Tutorial/Sources/MathFunctions/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/LeeChangYoung/Documents/Workspace/CMake_Tutorial/Sources/MathFunctions/Makefile&quot;  VERBOSE=1 clean"/>

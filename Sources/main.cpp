@@ -6,9 +6,8 @@
 
 #ifdef USE_MYMATH
 #include "MathFunctions.h"
-#else
-#include <math.h>
 #endif
+#include <cmath>
 
 
 int main(int argc, char* argv[])
@@ -23,7 +22,10 @@ int main(int argc, char* argv[])
     }
 
     float InputValue = atof(argv[1]);
-#ifdef USE_MYMATH
+#if defined(HAVE_LOG) && defined (HAVE_LOG)
+    float OutputValue = exp(log(InputValue) * 0.5);
+    fprintf(stdout, "exp log\n");
+#elif defined(USE_MYMATH)
     float OutputValue = mysqrt(InputValue);
     //std::cout << "SQRT Out : " << mysqrt(InputValue) << std::endl;
 #else

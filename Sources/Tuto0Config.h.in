@@ -2,3 +2,7 @@
 #define TUTO0_VERSION_MINOR @TUTO0_VERSION_MINOR@
 
 #cmakedefine USE_MYMATH
+
+//does the platform provide exp and log functions?
+#cmakedefine HAVE_LOG
+#cmakedefine HAVE_EXP
